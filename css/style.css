@@ -121,11 +121,17 @@ main h1 {
   justify-content: space-between;
   background-color: white;
   margin: 0px;
+  /* #container__text{
+      margin-right: -1500px;
+      transition: 1s ease;
+  } */
 }
 #vr__section #man__vr {
   width: 100%;
   margin-top: 100px;
   padding: 0px 16px;
+  /* margin-left: -1500px;
+  transition: 1s ease; */
 }
 #vr__section h2 {
   text-transform: uppercase;
@@ -420,13 +426,17 @@ footer small {
   #vr__section #man__vr {
     width: 60%;
     z-index: 1;
+    margin-left: -1000px;
+    transition: 0.8s ease-out;
   }
   #vr__section #container__text {
+    margin-right: -1000px;
     background: white;
     z-index: 22;
     margin-left: -100px;
     margin-bottom: -2px;
     padding: 12px 0px 2px 12px;
+    transition: 0.8s ease-out;
   }
   #vr__section #container__text h2, #vr__section #container__text p {
     text-align: left;

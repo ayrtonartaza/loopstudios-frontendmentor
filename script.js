@@ -14,3 +14,14 @@ function cerrarHeader (){
     menumobile.classList.toggle("menumobileclose");
 
 }
+
+
+const body = document.querySelector('body');
+let vr = document.getElementById('man__vr');
+let textvr = document.getElementById('container__text');
+window.onscroll = () => {
+    if (window.scrollY > 100) {
+        vr.style.marginLeft = '0px';
+        textvr.style.marginRight = '0px';
+    }
+}
