@@ -5,11 +5,7 @@
 }
 
 body {
-  height: 100vh;
-  background: url(../images/mobile/image-hero.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: auto;
 }
 
 li a:hover {
@@ -23,23 +19,30 @@ li a:hover {
 }
 
 header {
+  position: sticky;
+  top: -2px;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  height: 100vh;
+  height: 76px;
   padding: 0px 16px;
   color: white;
-  transition: 0.5s;
+  background: transparent;
+  transition: 0.3s;
+  z-index: 10000;
+  min-width: 100%;
+  max-width: 100%;
+  margin: auto;
 }
 header #icon {
   font-family: "Alata", sans-serif;
-  margin-top: 28px;
   font-size: 22px;
+  margin-top: 22px;
 }
 header ul {
   display: flex;
   margin-left: -1000px;
-  transition: 1.4s;
+  transition: 0.3s;
   flex-flow: column;
   justify-content: space-around;
   align-items: left;
@@ -60,7 +63,7 @@ header ul li a {
 header #icon__menu__close {
   position: absolute;
   right: 16px;
-  top: 32px;
+  top: 22px;
   height: 24px;
   width: 36px;
 }
@@ -82,6 +85,7 @@ header #icon__menu__close {
 .headeropen {
   background-color: black;
   transition: 0.3s;
+  height: 100vh;
 }
 
 .ulopen {
@@ -90,18 +94,25 @@ header #icon__menu__close {
 }
 
 main {
+  background: url(../images/mobile/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
-  top: 100px;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
   color: white;
   display: flex;
   justify-content: center;
-  width: 300px;
+  min-width: 100%;
+  height: 100vh;
 }
 main #container__hero__h1 {
-  margin-top: 100px;
+  max-width: 90%;
+  height: fit-content;
+  margin-top: 180px;
   border: white solid 2px;
   line-height: 40px;
 }
@@ -125,7 +136,7 @@ main h1 {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  margin: 0px;
+  margin-top: 100vh;
   /* #container__text{
       margin-right: -1500px;
       transition: 1s ease;
@@ -321,19 +332,18 @@ footer small {
 
 @media only screen and (min-width: 500px) {
   main {
-    min-width: 480px;
-    max-width: 90%;
     justify-content: center;
   }
   main #container__hero__h1 {
-    margin-top: 100px;
+    margin-top: 40vh;
+    width: 70%;
   }
   main h1 {
     font-size: 44px;
     text-transform: uppercase;
     font-weight: 300;
     padding: 19px;
-    line-height: 44px;
+    line-height: 54px;
   }
 
   #vr__section p {
@@ -342,25 +352,19 @@ footer small {
   }
 }
 @media only screen and (min-width: 760px) {
-  body {
-    background: url(../images/desktop/image-hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  header {
-    padding: 0px 56px;
-  }
-
   main {
+    background-size: 100%;
     width: 400px;
-    margin-left: 56px;
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
   main #container__hero__h1 {
-    margin-top: 100px;
+    margin-top: 35vh;
     border: white solid 2px;
     line-height: 40px;
+    width: 50%;
+    margin-left: 32px;
   }
 
   #vr__section #container__text {

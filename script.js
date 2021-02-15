@@ -12,7 +12,6 @@ function cerrarHeader (){
     
     let menumobile = document.getElementById('icon__menu__close');
     menumobile.classList.toggle("menumobileclose");
-
 }
 
 
