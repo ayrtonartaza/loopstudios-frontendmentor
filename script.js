@@ -18,10 +18,24 @@ function cerrarHeader (){
 
 const body = document.querySelector('body');
 let vr = document.getElementById('man__vr');
+const header = document.querySelector('header');
 let textvr = document.getElementById('container__text');
 window.onscroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 120) {
         vr.style.marginLeft = '0px';
         textvr.style.marginRight = '0px';
     }
+    if (window.scrollY > 50) {
+        header.classList.add('header__sticky');
+    }else{
+        header.classList.remove('header__sticky')
+    }
 }
+
+/* const header = document.querySelector('header');
+window.onscroll = () => {
+    if (window.scrollY > 100) {
+        header.style.background = 'black';
+    }
+}
+ */

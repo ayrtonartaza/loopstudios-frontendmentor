@@ -14,6 +14,10 @@ li a:hover{
     border-bottom: 4px white solid;
     transition: .2s;
 }
+.header__sticky{
+    background: black;
+    transition: .2s;
+}
 header{
     display: flex;
     flex-flow: column;
@@ -311,7 +315,8 @@ footer{
 
 @media only screen and (min-width: 500px) {
     main{
-        width: 100%;
+        min-width: 480px;
+        max-width: 90%;
         justify-content: center;
         #container__hero__h1{
             margin-top: 100px;
@@ -362,21 +367,29 @@ footer{
 
 @media only screen and (min-width: 992px){
     body{
-        background: url(../images/desktop/image-hero.jpg);
+        /* background: url(../images/desktop/image-hero.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position:top center;
+        background-position:top center; */
+        background: none;
+        /* height: auto; */
     }
     header{
         display: flex;
         flex-flow: row;
         justify-content: space-between;
-        align-items: flex-start;
-        height: 100vh;
+        align-items: center;
+        background: transparent;
+        height: 80px;
         padding: 0px 56px;
         transition: 0s;
+        position: fixed;
+        min-width: 100%;
+        top: 0;
+        z-index: 1000;
         #icon{
             font-size: 32px;
+            margin-top: 0;
         }
         ul{
             display: flex;
@@ -384,10 +397,12 @@ footer{
             transition: 0s;
             flex-flow: row;
             align-items: left;
-            margin-top: 20px;
+            margin-top: 0px;
             li{
                 font-family: 'Alata', sans-serif;
                 font-weight: 400;
+                margin-top: 0;
+                padding-top: 0;
                 a{
                     margin-right: 20px;
                     font-size: 18px;
@@ -402,10 +417,22 @@ footer{
     }
 
     main{
-        bottom: 100px;
-        height: fit-content;
+        background: url(../images/desktop/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:top center;
+        min-width: 100%;
+        height: 100vh;
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        display: flex;
+       justify-content: flex-start;
         #container__hero__h1{
-            margin-left: 56px;
+            margin-top: 30vh;
+            margin-left: 56px; 
+            width: 500px;
+            height: fit-content;
            h1{
                text-align: left;
                font-size: 60px;
@@ -420,6 +447,7 @@ footer{
         flex-flow: row;
         justify-content: space-between;
         align-items:flex-end;
+        margin-top: 100vh;
         #man__vr{
             width: 60%;
             z-index: 1;

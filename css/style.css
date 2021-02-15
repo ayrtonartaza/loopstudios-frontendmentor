@@ -17,6 +17,11 @@ li a:hover {
   transition: 0.2s;
 }
 
+.header__sticky {
+  background: black;
+  transition: 0.2s;
+}
+
 header {
   display: flex;
   flex-flow: column;
@@ -316,7 +321,8 @@ footer small {
 
 @media only screen and (min-width: 500px) {
   main {
-    width: 100%;
+    min-width: 480px;
+    max-width: 90%;
     justify-content: center;
   }
   main #container__hero__h1 {
@@ -363,23 +369,31 @@ footer small {
 }
 @media only screen and (min-width: 992px) {
   body {
-    background: url(../images/desktop/image-hero.jpg);
+    /* background: url(../images/desktop/image-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position:top center; */
+    background: none;
+    /* height: auto; */
   }
 
   header {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
+    align-items: center;
+    background: transparent;
+    height: 80px;
     padding: 0px 56px;
     transition: 0s;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    z-index: 1000;
   }
   header #icon {
     font-size: 32px;
+    margin-top: 0;
   }
   header ul {
     display: flex;
@@ -387,11 +401,13 @@ footer small {
     transition: 0s;
     flex-flow: row;
     align-items: left;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   header ul li {
     font-family: "Alata", sans-serif;
     font-weight: 400;
+    margin-top: 0;
+    padding-top: 0;
   }
   header ul li a {
     margin-right: 20px;
@@ -403,11 +419,23 @@ footer small {
   }
 
   main {
-    bottom: 100px;
-    height: fit-content;
+    background: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-width: 100%;
+    height: 100vh;
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
   }
   main #container__hero__h1 {
+    margin-top: 30vh;
     margin-left: 56px;
+    width: 500px;
+    height: fit-content;
   }
   main #container__hero__h1 h1 {
     text-align: left;
@@ -422,6 +450,7 @@ footer small {
     flex-flow: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 100vh;
   }
   #vr__section #man__vr {
     width: 60%;
