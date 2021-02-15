@@ -20,7 +20,7 @@ let vr = document.getElementById('man__vr');
 const header = document.querySelector('header');
 let textvr = document.getElementById('container__text');
 window.onscroll = () => {
-    if (window.scrollY > 120) {
+    if (window.scrollY > 240) {
         vr.style.marginLeft = '0px';
         textvr.style.marginRight = '0px';
     }
