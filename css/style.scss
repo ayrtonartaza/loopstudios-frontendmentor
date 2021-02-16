@@ -137,6 +137,7 @@ main{
         width: 100%;
         margin-top: 100px;
         padding: 0px 16px;
+        
         /* margin-left: -1500px;
         transition: 1s ease; */
         
@@ -453,6 +454,7 @@ footer{
            }
         }
     }
+   
     #vr__section{
         padding: 0 56px;
         display: flex;
@@ -463,11 +465,11 @@ footer{
         #man__vr{
             width: 60%;
             z-index: 1;
-            margin-left: -1000px;
+            margin-left: -1000px; 
             transition: .8s ease-out;
         }
         #container__text{
-            margin-right: -1000px;
+            margin-right: -1000px;  
             background: white;
             z-index: 22;
             margin-left: -100px;
@@ -480,6 +482,13 @@ footer{
         }
     }
     
+    .marginleftvr{
+        transform: translateX(1000px);
+    }
+    .marginrightvr{
+       
+        transform: translateX(-1000px);
+    }
     
     #container__categories{
         display: grid;

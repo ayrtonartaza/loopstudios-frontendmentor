@@ -14,20 +14,23 @@ function cerrarHeader (){
     menumobile.classList.toggle("menumobileclose");
 }
 
-
 const body = document.querySelector('body');
 let vr = document.getElementById('man__vr');
 const header = document.querySelector('header');
 let textvr = document.getElementById('container__text');
+
+let mainsection = document.querySelector('main');
 window.onscroll = () => {
-    if (window.scrollY > 200) {
-        vr.style.marginLeft = '0px';
-        textvr.style.marginRight = '0px';
+    if (window.scrollY > mainsection.clientHeight / 2 ) {
+        vr.classList.add('marginleftvr');
+        textvr.classList.add('marginrightvr');
+        console.log(mainsection.clientHeight)
     } 
-    else{
-        vr.style.marginLeft = '-1000px';
-        textvr.style.marginRight = '-1000px';
-    }
+    else {
+        vr.classList.remove('marginleftvr');
+        textvr.classList.remove('marginrightvr');
+    } 
+
     if (window.scrollY > 50) {
         header.classList.add('header__sticky');
     }else{

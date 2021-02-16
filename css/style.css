@@ -475,6 +475,14 @@ footer small {
     text-align: left;
   }
 
+  .marginleftvr {
+    transform: translateX(1000px);
+  }
+
+  .marginrightvr {
+    transform: translateX(-1000px);
+  }
+
   #container__categories {
     display: grid;
     grid-gap: 0px;
