@@ -9,6 +9,7 @@ Para la mayoria use flexblox , desktop y moobile, use css grid para las categori
 #js
 Lo use mas que nada para las interaciones del menu mobile abierto y cerrado.
 Tuve problemas para cambiar la imagen del menu hambueguesa a la x de cerrar y viceversa, lo solucione haciendo dos clases para cada una con distintos backgroun image.
+Por ahora la animacion de la seccion del hombre con vr esta solo para desktop.
 
 A partir de aca son cosas que yo le agregue , no vienen como parte del desafio.
 -------
