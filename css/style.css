@@ -19,7 +19,7 @@ li a:hover {
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   flex-flow: column;
