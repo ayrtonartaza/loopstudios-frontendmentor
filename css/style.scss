@@ -11,6 +11,7 @@ li a:hover{
     border-bottom: 4px white solid;
     transition: .2s;
 }
+/* clase para el header cuando hace scroll haci abajo tanto dekstop como mobile */
 .header__sticky{
     background: black;
     transition: .2s;
@@ -66,6 +67,7 @@ header{
     }
     
 }
+/* clases para el menu mobile, en este caso cuando se abre */
 .menumobileopen{
     background-image: url(../images/icon-hamburger.svg);
     background-size: contain;
@@ -352,9 +354,7 @@ footer{
 
 @media only screen and (min-width: 760px){
     
-    header{
-        
-    }
+    
     main{
         background-size: 100%;
         width: 400px;
@@ -481,7 +481,7 @@ footer{
             }
         }
     }
-    
+    /* clases para los margenes del vr section , los muestra */
     .marginleftvr{
         transform: translateX(1000px);
     }
