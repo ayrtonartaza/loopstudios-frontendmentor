@@ -142,14 +142,8 @@ main{
         margin-top: 100px;
         padding: 0px 16px;
         
-        /* margin-left: -1500px;
-        transition: 1s ease; */
-        
     }
-    /* #container__text{
-        margin-right: -1500px;
-        transition: 1s ease;
-    } */
+    
     h2{
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
@@ -197,10 +191,13 @@ main{
         }
     .card:hover{
         cursor: pointer;
+        transform: scale(108%);
+        transition: .4s;
     } 
     .card:hover .categories{
         filter: opacity(65%);
         transition: .3s;
+        
     }
     .card:hover p{
         color: black;
@@ -488,7 +485,6 @@ footer{
         transform: translateX(1000px);
     }
     .marginrightvr{
-       
         transform: translateX(-1000px);
     }
     

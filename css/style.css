@@ -141,17 +141,11 @@ main h1 {
   justify-content: space-between;
   background-color: white;
   margin-top: 100vh;
-  /* #container__text{
-      margin-right: -1500px;
-      transition: 1s ease;
-  } */
 }
 #vr__section #man__vr {
   width: 100%;
   margin-top: 100px;
   padding: 0px 16px;
-  /* margin-left: -1500px;
-  transition: 1s ease; */
 }
 #vr__section h2 {
   text-transform: uppercase;
@@ -199,6 +193,8 @@ main h1 {
 }
 #creations .card:hover {
   cursor: pointer;
+  transform: scale(108%);
+  transition: 0.4s;
 }
 #creations .card:hover .categories {
   filter: opacity(65%);

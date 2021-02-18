@@ -21,6 +21,14 @@ let textvr = document.getElementById('container__text');
 
 let mainsection = document.querySelector('main');
 window.onscroll = () => {
+    if (window.scrollY > 50) {
+        header.classList.add('header__sticky');
+    }else{
+        header.classList.remove('header__sticky')
+    }
+
+
+
     if (window.scrollY > mainsection.clientHeight / 2 ) {
         vr.classList.add('marginleftvr');
         textvr.classList.add('marginrightvr');
@@ -31,11 +39,7 @@ window.onscroll = () => {
         textvr.classList.remove('marginrightvr');
     } 
 
-    if (window.scrollY > 50) {
-        header.classList.add('header__sticky');
-    }else{
-        header.classList.remove('header__sticky')
-    }
+    
 }
 
 /* const header = document.querySelector('header');

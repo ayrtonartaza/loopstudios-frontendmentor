@@ -4,7 +4,7 @@
 #css
 Utilice sass principalmente para hacerlo mas rapido.
 Para la mayoria use flexblox , desktop y moobile, use css grid para las categorias en desktop y flexbox en mobile.
-
+La proxima vez voy a empezar poniendo normalize css, esta vez me olvide y tuve pequeños problemas con como se veia en firefox el main text
 
 #js
 Lo use mas que nada para las interaciones del menu mobile abierto y cerrado.
