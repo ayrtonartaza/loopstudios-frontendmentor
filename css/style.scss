@@ -5,7 +5,6 @@
 }
 body{
     height: auto;
-   
 }
 li a:hover{
     border-bottom: 4px white solid;
@@ -191,7 +190,7 @@ main{
         }
     .card:hover{
         cursor: pointer;
-        transform: scale(108%);
+        transform: scale(1.04);
         transition: .4s;
     } 
     .card:hover .categories{

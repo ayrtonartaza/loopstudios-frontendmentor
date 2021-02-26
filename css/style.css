@@ -193,7 +193,7 @@ main h1 {
 }
 #creations .card:hover {
   cursor: pointer;
-  transform: scale(108%);
+  transform: scale(1.04);
   transition: 0.4s;
 }
 #creations .card:hover .categories {
